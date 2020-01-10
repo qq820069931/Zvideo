@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dtd约束 -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 名称空间 namespace :区别不同映射文件中的唯一标识 -->
+<mapper namespace="com.joinlabs.dao.UploadMapper">
+
+	<resultMap type="com.joinlabs.entity.Video" id="videoMap">
+		<id property="vid" column="v_id"/>
+		<result property="vaid" column="v_aid"/>
+		<result property="vcid" column="v_cid"/>
+		<result property="vuid" column="v_uid"/>
+		<result property="vname" column="v_name"/>
+		<result property="vtime" column="v_time"/>
+		<result property="vclick" column="v_click"/>
+		<result property="vphoto" column="v_photo"/>
+		<result property="vurl" column="v_url"/>
+		<result property="vcontent" column="v_content"/>
+		<result property="vtag1" column="v_tag1"/>
+		<result property="vtag2" column="v_tag2"/>
+		<result property="vtag3" column="v_tag3"/>
+		<result property="vpower" column="v_power"/>
+		<result property="vsize" column="v_size"/>
+		<result property="vnull3" column="v_null3"/>
+	
+	</resultMap>
+	
+	
+
+	<insert id="saveFile" parameterType="com.joinlabs.entity.Video">
+		insert into dmvideo values(video_id_seq.nextval,#{vaid},#{vcid},#{vuid},#{vname},#{vtime},#{vclick},#{vphoto},#{vurl},#{vcontent},#{vtag1},#{vtag2},#{vtag3},#{vpower},#{vsize},#{vnull3})
+	</insert>
+	
+	<select id="findMovieByName" parameterType="string" resultMap="videoMap">
+		select * from dmvideo where v_name = #{vname}
+	</select>
+	
+	<update id="updateMovieInfo" parameterType="com.joinlabs.entity.Video">
+		 update dmvideo set v_photo=#{vphoto},v_content=#{vcontent},v_tag1=#{vtag1},v_tag2=#{vtag2},v_tag3=#{vtag3} where v_name=#{vname}
+	</update>
+
+</mapper>

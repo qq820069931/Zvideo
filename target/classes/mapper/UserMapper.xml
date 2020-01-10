@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joinlabs.dao.UserMapper">
+	<insert id="addUser" parameterType="User">
+		insert into dmuser
+		values(user_id_seq.nextval,#{uaccount},#{uname},#{unname},#{upassword},#{uemail},'该用户很懒，什么都没写...',0,#{usex},0,null,null,null,null)
+	</insert>
+	<select id="checkUser" parameterType="User" resultMap="UserMap">
+		select * from dmuser where u_account = #{uaccount} and u_password = #{upassword}
+	</select>
+	<update id="updatePwd" parameterType="String">
+		update dmuser set u_password = #{password} where u_account = #{account}	
+	</update>
+	<select id="findUserByAccount" parameterType="String" resultMap="UserMap">
+		select * from dmuser where u_account = #{account}
+	</select>
+	<select id="findUserEmailByAccount" parameterType="String" resultType="String">
+	    select u_email from dmuser where u_account = #{account}
+	
+	</select>
+	<select id="findUserLikeName" parameterType="User" resultMap="UserMap">
+		select u_nname from dmuser where u_nname like #{unname}
+	</select>
+	
+	
+	
+	
+	<select id="selectUserByUid"  resultMap="UserMap">
+		select * from dmuser where u_id = #{value}
+	</select>
+	<select id="selectMyAttentionByUid"  resultMap="UserMap">
+		select * from dmuser dmu ,(select * from dmattention where a_uid = #{value}) dma where dmu.u_id=dma.a_uid
+		
+	</select>
+	
+	<update id="upDateUse">  <!-- 修改信息 -->
+	  update dmuser set u_name =#{uname},u_nname=#{unname},u_email=#{uemail},u_satement=#{usatement}  where u_id =#{uid}
+	</update>
+	<update id="updateUserPower">  <!-- 修改信息 -->
+	  update dmuser set u_power =1 where u_id =#{value}
+	</update>
+	
+	<resultMap type="User" id="UserMap">
+		<!-- 要将 实体类的属性 与 数据库的字段名对应起来 -->
+		<!-- 主键设置 -->
+		<id property="uid" column="u_id" />
+
+		<!-- 其他字段的映射 -->
+
+		<result property="uaccount" column="u_account" />
+		<result property="uname" column="u_name " />
+		<result property="unname" column="u_nname" />
+		<result property="upassword" column="u_password" />
+		<result property="uemail" column="u_email" />
+		<result property="usatement" column="u_satement" />
+		<result property="upower" column="u_power" />
+		<result property="usex" column="u_sex" />
+		<result property="ucolor" column="u_color" />
+		<result property="uphoto" column="u_photo" />
+		<result property="unull1" column="u_null1" />
+		<result property="unull2" column="u_null2" />
+		<result property="unull3" column="u_null3" />
+		
+</resultMap>
+
+	
+		<!-- zjj 
+<insert id="adduploadVido" parameterType="com.joinlabs.entity.Video" >
+		 insert into dmvideo1(v_id,v_cid,v_uid,v_name,v_time,v_click,v_photo,v_url,v_content,v_tag)values
+          (seq_dmvideo1.nextval,#{v_cid,jdbcType=DECIMAL},#{v_uid,jdbcType=DECIMAL},#{v_name,jdbcType=VARCHAR},#{v_time,jdbcType=DATE}
+          ,#{v_click,jdbcType=DECIMAL},#{v_photo,jdbcType=VARCHAR},#{v_url,jdbcType=VARCHAR},#{v_content,jdbcType=VARCHAR},#{v_tag,jdbcType=VARCHAR})     
+      </insert>
+    <select id="getUser" resultMap="getUser">
+        SELECT * from USER 
+    </select>
+    
+    <select id="selectUserById"  parameterType="int" resultMap="userMap">
+        SELECT * from dmuser where u_id=#{id}
+    </select>
+
+<select id="selectCollectVideoById" parameterType="int" resultMap="collectMap">
+    select * from  dmcollect1 collect join dmvideo1 video on collect.v_uid =video.v_uid where collect.v_uid=#{id}
+</select>
+
+
+<select id="selectMyworksById" parameterType="int" resultType="com.joinlabs.entity.Video">
+     select * from dmvideo1 where v_uid=#{id}
+</select>
+ 
+ 
+<insert id="addAttention" parameterType="com.joinlabs.entity.zjj.GzUseritem" >
+    insert into dmattention1 values(attention1_id_seq.nextval,#{a_uid,jdbcType=DECIMAL},#{u_id,jdbcType=DECIMAL})
+</insert>
+
+<insert id="addliuyan" parameterType="com.joinlabs.entity.zjj.LyInfo">
+
+	<selectKey order="AFTER" keyProperty="iid" resultType="int">
+		select infor1_id_seq.currval from dual
+	</selectKey>
+
+    insert into dminfor1 values(infor1_id_seq.nextval,#{i_uid,jdbcType=DECIMAL},#{u_id,jdbcType=DECIMAL},#{icontent,jdbcType=VARCHAR},#{itime,jdbcType=VARCHAR})
+</insert>
+
+
+<select id="selectAllGzById" parameterType="int" resultMap="gzMap"> 
+    select * from dmattention1 attention join dmuser gzuser on attention.u_id=gzuser.u_id where a_uid=#{id}
+</select>
+<select id="selectMyInformById" parameterType="int" resultMap="InformItemMap">
+     select * from dminfor1 info join dmuser duser on info.u_id=duser.u_id where i_uid=#{id}
+</select>
+
+<select id="selectMyInformByPrimaryId" parameterType="int" resultMap="InformItemMap">
+     select * from dminfor1 info join dmuser duser on info.u_id=duser.u_id where iid=#{id}
+</select>
+<select id="selectHistoryVideoById" parameterType="int" >
+    select * from history hs join dmvideo1 video on hs.v_id=video.v_id join dmuser us on hs.u_id=us.u_id where u_id=#{id}
+</select>
+	
+<resultMap type="com.joinlabs.entity.zjj.dmCollectItem" id="collectMap">
+        <id property="c_id" column="c_id"/>
+		<result property="v_uid" column="v_uid"/>
+		
+		<collection property="video" ofType="Video">
+		       <id property="v_id" column="v_id"/>
+		       <result property="v_cid" column="v_cid"/>
+		       <result property="v_uid" column="v_uid"/>
+		       <result property="v_name" column="v_name"/>
+		       <result property="v_time" column="v_time"/>
+		       <result property="v_click" column="v_click"/>
+		       <result property="v_photo" column="v_photo"/>
+		       <result property="v_url" column="v_url"/>
+		       <result property="v_content" column="v_content"/>
+		       <result property="v_tag" column="v_tag"/>
+		</collection>
+
+</resultMap>
+
+
+
+<resultMap type="com.joinlabs.entity.zjj.GzUser" id="gzMap">
+        <id property="a_id" column="a_id"/>
+		<result property="a_uid" column="a_uid"/>
+		<collection property="user" ofType="User" autoMapping="true">
+		 <id property="u_id" column="u_id"/>
+	     <result property="u_account" column="u_account"/>
+		<result property="u_name" column="u_name"/>    
+		</collection>
+</resultMap>
+
+
+
+
+<resultMap type="com.joinlabs.entity.zjj.InformItem" id="InformItemMap">
+	
+	<id column="iid" property="iid"/>
+	<result column="i_uid" property="i_uid"/>
+	<result column="itime" property="itime"/>
+	<result column="icontent" property="icontent"/>
+	
+	<association javaType="com.joinlabs.entity.User" property="user" autoMapping="true">
+		<id property="u_id" column="u_id"/>
+	     <result property="u_account" column="u_account"/>
+		<result property="u_name" column="u_name"/>    
+		
+	</association>
+	
+
+</resultMap>
+
+-->
+</mapper>

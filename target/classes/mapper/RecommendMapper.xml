@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joinlabs.dao.RecommendMapper">
+
+	<update id="updateRecommendClick" parameterType="Recommend">
+		UPDATE dmrecommend SET r_click=#{rclick} WHERE r_uid=#{ruid} and r_cid=#{rcid}
+	</update>
+	
+	<insert id="addNewUserRecommend">
+		insert into dmrecommend values(recommend_id_seq.nextval,user_id_seq.currval,#{param},0)
+	</insert>
+	
+	<select id="selectRecommendToCid" parameterType="Recommend">
+		select * from dmrecommend where r_uid=#{ruid} and r_cid=#{rcid}
+	</select>
+	<select id="selectRecommend" parameterType="Recommend" resultMap="RecommendMap">
+		select * from dmrecommend where r_uid=#{ruid}
+	</select>
+	<select id="selectRecommendMaxClick" parameterType="Recommend" resultMap="RecommendMap">
+		select * from dmrecommend where r_uid=#{ruid} and r_click=
+		(select greatest ((select r_click from dmrecommend  where r_cid='C101' and r_uid=#{ruid} ),
+                      	  (select r_click from dmrecommend  where r_cid='C102' and r_uid=#{ruid} ),
+                      	  (select r_click from dmrecommend  where r_cid='C103' and r_uid=#{ruid} ),
+                      	  ( select r_click from dmrecommend  where r_cid='C104' and r_uid=#{ruid} )) from dual)
+	</select>
+	
+	<!-- gx -->
+	<update id="AddClick">
+
+      update dmrecommend dmre set 
+             r_click=
+             ( select (select r_click  from dmrecommend dm where  dm.r_cid=#{param1})+1 from dual )
+              where  dmre.r_cid=#{param2} and  dmre.r_uid=#{param3}
+             
+
+	</update>
+	<resultMap type="Recommend" id="RecommendMap">
+		<!-- 要将 实体类的属性 与 数据库的字段名对应起来 -->
+		<!-- 主键设置 -->
+		<id property="rid" column="r_id" />
+
+		<!-- 其他字段的映射 -->
+
+		<result property="ruid" column="r_uid" />
+		<result property="rcid" column="r_cid" />
+		<result property="rclick" column="r_click" />
+		
+		<!-- 没有写的字段，默认ResultSet 对象会获取 与 实体属性名一样的 字段名 -->
+
+	</resultMap>
+
+</mapper>

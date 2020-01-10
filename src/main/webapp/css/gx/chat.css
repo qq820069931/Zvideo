@@ -1,0 +1,125 @@
+@CHARSET "UTF-8";
+
+html{
+	height: 100%;
+}
+.body-center{
+	height: 650px;
+	display:inline-block;
+	margin-top:-10px;
+	width: 358px;
+	float: right;
+   
+}
+.center-info{
+	height: 100%;
+	width:100%;
+	margin: 10px auto;
+	padding: 5px 20px;
+	
+	overflow-x:hidden;
+	overflow:auto;
+	
+	
+	background-color: #F8F8F8;
+}
+.center-input{
+
+	height: 48px;
+	
+	border-bottom:1px #A9A9A9 solid;
+	
+	resize: none;
+	margin-top: -8px
+
+	
+}
+
+.ensu{
+	height: 30px;
+	width:100%; /**/
+	margin-top: 450px;
+
+
+}
+
+
+.ensure button{
+	float: right;
+	background-color: #4eacfb;
+	border: none;
+	margin-top:-54px;
+	width: 15%;
+    height: 48px;
+}
+.basicInfo{
+	clear: both;
+	max-width:80%;
+	/* width: 80%; */
+	margin:10px 0;
+}
+.basicInfo-left{
+	width: 50px;
+	height: 50px;
+}
+.basicInfo-left img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+}
+.basicInfo-right{
+	max-width:76%;
+	/* width:80%;  */
+	padding:2px 12px;
+}
+.username{
+	color: #8b8b8b;
+}
+.context{
+	max-width:99%;
+	padding:0 3px;
+	background-color:#cdd7e2;
+	margin-top: 5px;
+	border-radius: 5px;
+	word-wrap:break-word;
+	word-break:break- all;
+}
+.welcome{
+	clear:both;
+	text-align: center;
+}
+.body-right img{
+	width: 22%;
+	position:fixed; 
+	bottom:2%;
+	right: 2%;
+}
+.left-info{
+	padding: 15px 54px;
+	width: 50%;
+}
+.memberInfo{
+	height: 50px;
+	
+    line-height: 25px;
+    
+}
+.userpic{
+	border-radius: 20px;
+    height: 50px;
+    
+    float: left;
+}
+.userpic img{
+	width:50px;
+	height:50px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.exitroom{
+	margin-top: 12px;
+}
+.exitroom:HOVER {
+	color:red;
+}

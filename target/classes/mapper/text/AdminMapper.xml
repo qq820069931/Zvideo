@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dtd约束 -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 名称空间 namespace :区别不同映射文件中的唯一标识 -->
+<mapper namespace="com.joinlabs.dao.AdminMapper">
+
+	<resultMap type="com.joinlabs.entity.Admin" id="adminMap">
+		<id property="aid" column="a_id"/>
+		<result property="aname" column="a_name"/>
+		<result property="aemail" column="a_email"/>
+	
+	</resultMap>
+	
+	<select id="isExist" parameterType="string" resultMap="adminMap">
+		select * from dmadmin where a_email = #{aemail}
+	</select>
+	
+	<update id="updateAdminInfo" parameterType="com.joinlabs.entity.Admin">
+		update dmadmin set a_name=#{aname},a_email=#{aemail} where a_id=#{aid}
+	</update>
+
+</mapper>

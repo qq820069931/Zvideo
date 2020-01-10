@@ -1,0 +1,161 @@
+h6{
+	margin: 5px; 
+	padding: 0px;
+}
+
+h4{
+	margin: 3px; 
+	padding: 0px;
+}
+h5{
+	margin: 3px; 
+	padding: 0px;
+}
+
+
+.runs{
+	
+	width: 1500px;
+	
+	
+	margin:0 auto;
+}
+
+
+.left{
+	margin-left: 45px;
+	
+	width: 1057px;
+	
+	float: left;
+	
+}
+.right{
+	width: 360px;
+	margin-left: 10px;
+	min-width: 347px;
+	float: left;
+
+	
+	
+}
+.redeoHead{
+	height: 60px;
+	
+}
+.video{
+	margin-top: 50px;
+	height: 685px;
+	width: 1057px;
+	
+	
+}
+.synopsis{
+	width: 1057px;
+	margin-top: 30px;
+	
+}
+.headImg{
+	
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-radius:50%;
+	overflow: hidden;
+	float: left;
+}
+.textarea{
+	margin-top: 0px;
+	margin-left: 20px;
+	float: left;
+	border:1px solid #64575A;
+}
+.button{
+	height: 70px; 
+	margin-top: 0px;
+	margin-left: 8px;
+	width: 80px;
+}
+.headImg2{
+   
+	width: 50px;
+	height: 50px;
+	margin-top:10px;
+	border-radius:50%;
+	overflow: hidden;
+	float: left
+	
+}
+.bodys{
+	
+	margin-top: 10px;
+	margin-left: 20px;
+
+}
+.headImg3{
+	
+	
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	overflow: hidden;
+	float: left;
+	
+}
+.headImg4{
+	
+	width: 35px;
+	height: 35px;
+	border-radius:50%;
+	overflow: hidden;
+	float: left;
+	
+	
+}
+.commentTwo{
+	
+	margin-top: 15px;
+	
+}
+.synopsis{
+	
+	border-bottom:1px #A9A9A9 solid;
+	border-top:1px #A9A9A9 solid;
+	
+	
+}
+.author{
+	height: 104px;
+	
+	margin-top: 45px;
+	margin-left: -10px;
+	
+}
+.chat{
+	height:685px;
+	width: 360px;
+	
+	border:1px solid #64575A;
+	
+}
+
+
+
+.buttonChatDiv{
+	
+	background-color: white;
+	border-bottom:1px solid #64575A;
+	 border-right:1px solid #64575A;
+	width: 359px;
+	
+}
+.buttonchar{
+	width: 175px;
+	border: 0;
+    background-color: transparent;
+    outline: none;
+}
+.coome{
+	width: 1057px;
+}

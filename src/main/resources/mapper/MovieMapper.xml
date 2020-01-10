@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dtd约束 -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 名称空间 namespace :区别不同映射文件中的唯一标识 -->
+<mapper namespace="com.joinlabs.dao.zy.MovieMapper">
+
+	<resultMap type="com.joinlabs.entity.Video" id="videoMap">
+		<id property="vid" column="v_id"/>
+		<result property="vaid" column="v_aid"/>
+		<result property="vcid" column="v_cid"/>
+		<result property="vuid" column="v_uid"/>
+		<result property="vname" column="v_name"/>
+		<result property="vtime" column="v_time"/>
+		<result property="vclick" column="v_click"/>
+		<result property="vphoto" column="v_photo"/>
+		<result property="vurl" column="v_url"/>
+		<result property="vcontent" column="v_content"/>
+		<result property="vtag1" column="v_tag1"/>
+		<result property="vtag2" column="v_tag2"/>
+		<result property="vtag3" column="v_tag3"/>
+		<result property="vpower" column="v_power"/>
+		<result property="vsize" column="v_size"/>
+		<result property="vnull3" column="v_null3"/>
+	
+	</resultMap>
+	
+	<select id="findAllMovie" resultMap="videoMap">
+		select * from dmvideo where v_uid = 1
+	</select>
+	
+	<delete id="underMovie" parameterType="int">
+		delete dmvideo where v_id = #{vid}
+	</delete>
+	
+	<select id="selectMovieByName" parameterType="string" resultMap="videoMap">
+		select * from dmvideo where v_name like '%${value}%'
+	</select>
+	
+
+</mapper>

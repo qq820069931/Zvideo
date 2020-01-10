@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joinlabs.dao.gx.dminformMapper">
+
+   <!-- 
+       信息通知   
+       收藏  关注 (未实现)
+       评论 时通知视频作者
+    
+     	private int iid;
+	private int iuid;
+	private int iuuid;
+	private int ivid;
+	private String icontent;
+	private Date itime;
+	private int istate;                      
+    -->
+
+<insert id="AddDminform">
+
+insert into dminform  values(inform_id_seq.nextval,#{iuid},#{iuuid},#{ivid},#{icontent}, #{itime},#{istate})
+
+</insert>
+
+<select id="selectMyInformByUid" resultMap="InformMap">
+ 	select * from dminform where i_uid = #{value}
+</select>
+	<resultMap type="Inform" id="InformMap">
+		<!-- 要将 实体类的属性 与 数据库的字段名对应起来 -->
+		<!-- 主键设置 -->
+		<id property="iid" column="i_id" />
+
+		<!-- 其他字段的映射 -->
+
+		<result property="iuid" column="i_uid" />
+		<result property="iuuid" column="i_uuid " />
+		<result property="ivid" column="i_vid" />
+		<result property="icontent" column="i_content" />
+		<result property="itime" column="i_time" />
+		<result property="istate" column="i_state" />
+		
+</resultMap>
+
+</mapper>

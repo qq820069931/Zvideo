@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joinlabs.dao.gx.dmattentionMapper">
+<!-- 
+关注表的判断                  添加 删除   根据用户 id 和作者ID   
+
+ -->
+
+<select id="FindDmattention" resultType = 'com.joinlabs.entity.Attention' >
+    select * from dmattention where a_uid=#{param1} and a_uuid=#{param2}
+   
+</select>
+<delete id="DeleDmattention" >
+  
+  delete from dmattention where a_uuid=#{param1} and a_uuid=#{param2}
+  
+</delete>
+<insert id="AddDmattention">
+    insert into dmattention values(collect_id_seq.nextval,#{param1},#{param2})     
+       
+</insert>
+
+<select id="FindAllDmattention" resultType = 'com.joinlabs.entity.Attention'>
+    select * from dmattention where a_uuid=#{param1}
+   
+</select>
+
+
+
+
+
+</mapper>

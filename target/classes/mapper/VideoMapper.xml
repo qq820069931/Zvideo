@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joinlabs.dao.VideoMapper">
+	<select id="findVideo" parameterType="Video">
+		select * from dmvideo where v_id = #{vid} and v_power = 1
+	</select>
+	<select id="findVideoByClick" parameterType="Video" resultMap="VideoMap">
+		select * from dmvideo where v_power = 1 and ORDER BY v_click DESC
+	</select>
+	<select id="findVideoByCid" parameterType="Video" resultMap="VideoMap">
+		select * from dmvideo where v_cid = #{vcid} and v_power = 1
+	</select>
+	<select id="findVideoByCidAndClick" parameterType="Video" resultMap="VideoMap">
+		select * from dmvideo where v_cid = #{vcid} and v_power = 1 ORDER BY v_click DESC
+	</select>
+	<select id="findVideoLikeName" parameterType="Video" resultMap="VideoMap">
+		select v_name from dmvideo where v_name like %#{vname}% and v_power = 1
+	</select>
+	
+		<select id="findMovieBytag" resultMap="VideoMap">
+	 select * from dmvideo where v_cid = 'C101' and v_power = 1
+	 <if test="param1!=null and param1!=''">
+	 and v_tag1=#{param1}
+	  	</if>
+	  	<if test="param2!=null and param2!=''">
+	  		and v_tag2 like %#{param2}%
+	  	</if>
+		<if test="param2!=null and param2!=''">
+	  		and v_tag3=#{param3}
+	  	</if>
+	  </select>
+	 
+	<select id="findAllVideo" parameterType="Video" resultMap="VideoMap">
+		select * from dmvideo and v_power = 1
+	</select>
+	<select id="findVideoByCidAndPage" resultMap="VideoMap">
+		select * from dmvideo where v_power = 1 and v_cid = #{param3} and v_id &gt;= #{param1} AND v_id &lt;= #{param2}
+	</select>
+	
+	<select id="FindeVideoLenT" resultType="Integer">         <!-- 找到同一类型所有视频 条数 -->
+           select count(*) from dmvideo where v_cid=#{param1} and v_power = 1
+      
+      </select>      
+                  <select id="PageVideo" resultMap="VideoMap">         <!-- 视频分页 -->
+       select a.* from (select vid.*, rownum rn from (select * from 
+     dmvideo dmv,
+                 dmuser dmu , 
+                 dmclass dmcl
+                 where v_power = 1 and
+                 dmv.v_uid=dmu.u_id 
+                 and dmcl.c_id=dmv.v_cid
+                 
+                and dmv.v_cid=#{param1}  order by dmv.v_time desc) vid ) a where rn between (#{param2}-1) *15 and #{param3} * 15  
+      
+      </select> 
+      
+      <select id="TigrVideo" resultMap="VideoMap">         <!-- tiger视频分页 -->
+                        
+                          select a.* from (select vid.*, rownum rn from (select * from 
+     dmvideo dmv,
+                 dmuser dmu , 
+                 dmclass dmcl
+                 where v_power = 1 and
+                 dmv.v_uid=dmu.u_id 
+                 and dmcl.c_id=dmv.v_cid
+                 
+               and dmv.v_tag1 =#{param1} or dmv.v_tag2=#{param1} or 
+                dmv.v_tag3=#{param1} 
+                  order by dmv.v_time desc) vid ) a 
+                  where rn between (#{param2}-1) *15 and #{param3} * 15 
+                        
+                        
+       
+      
+      </select>
+	
+	<!-- gx -->
+	 <select id="FindeVideo" resultMap="VideoMap"><!-- 根据videoID找到视频详细信息 包括发布人 -->
+                 select * from 
+                 dmvideo dmv,
+                 dmuser dmu , 
+                 dmclass dmcl 
+                 where v_power = 1 and
+                 dmv.v_uid=dmu.u_id 
+                 and dmcl.c_id=dmv.v_cid
+                  and dmv.v_id=#{value}
+                 
+                 </select>
+             <update  id="AdeeClick">              <!-- 把该视频的点击数+1 -->
+             update dmvideo dmvi set 
+             v_click=
+             ( select (select v_click  from dmvideo dmv where  dmv.v_id=#{value})+1 from dual )
+              where  dmvi.v_id=#{value}
+             
+             </update>  
+      <select id="FindeVideoLen" resultMap="VideoMap">         <!-- 找到同一类型所有视频 并除了自己 -->
+          select * from 
+                 dmvideo dmv,
+                 dmuser dmu , 
+                 dmclass dmcl
+                 where v_power = 1 and
+                 dmv.v_uid=dmu.u_id 
+                 and dmcl.c_id=dmv.v_cid
+                 
+                and dmcl.c_id=#{param1} and dmv.v_id    &lt;&gt;   #{param2}
+      
+      </select>           
+	<resultMap type="Video" id="VideoMap">
+		<!-- 要将 实体类的属性 与 数据库的字段名对应起来 -->
+		<!-- 主键设置 -->
+		<id property="vid" column="v_id" />
+
+		<!-- 其他字段的映射 -->
+
+		<result property="vaid" column="v_aid" />
+		<result property="vcid" column="v_cid" />
+		<result property="vuid" column="v_uid" />
+		<result property="vname" column="v_name" />
+		<result property="vtime" column="v_time" />
+		<result property="vclick" column="v_click" />
+		<result property="vphoto" column="v_photo" />
+		<result property="vurl" column="v_url" />
+		<result property="vcontent" column="v_content" />
+		<result property="vtag1" column="v_tag1" />
+		<result property="vtag2" column="v_tag2" />
+		<result property="vtag3" column="v_tag3" />
+		<result property="vpower" column="v_power" />
+		<result property="vsize" column="v_size" />
+		<result property="vnull3" column="v_null3" />
+		
+		<result property="use.uid" column="u_id" />  
+        <result property="use.unname" column="u_nname" />  
+        <result property="use.uname" column="u_name" />
+        <result property="use.uphoto" column="u_photo" />
+        <result property="use.usatement" column="u_satement" />
+        <result property="dmclass.cname" column="c_name" />
+
+
+		<!-- 没有写的字段，默认ResultSet 对象会获取 与 实体属性名一样的 字段名 -->
+
+	</resultMap>
+
+	<select id="selectCollectByUid" resultMap="VideoMap">
+		select * from dmvideo dmv ,(select * from dmcollect where c_uid = #{value}) coll where coll.c_vid=dmv.v_id
+	</select>
+	<select id="selectMyVideoByUid" resultMap="VideoMap">
+		select * from dmvideo where v_uid = #{value} and v_power = 1
+	</select>
+	
+	<insert id="adduploadVido" parameterType="com.joinlabs.entity.Video" >
+		 insert into dmvideo values(video_id_seq.nextval,#{vaid},#{vcid},#{vuid},#{vname},to_date(#{vtime},'yyyy-mm-dd,hh24:mi:ss'),#{vclick},#{vphoto},#{vurl},#{vcontent},#{vtag1},#{vtag2},#{vtag3},#{vpower},#{vsize},#{vnull3})
+      </insert>
+      
+      <select id="PageUseVideo" resultMap="VideoMap">         <!-- 找到同一个人的所有视频分页 -->
+       select a.* from (select vid.*, rownum rn from (select * from 
+     dmvideo dmv,
+                 dmuser dmu , 
+                 dmclass dmcl
+                 where v_power = 1 and
+                 dmv.v_uid=dmu.u_id 
+                 and dmcl.c_id=dmv.v_cid
+                 
+                and dmv.v_uid=#{param1}  order by dmv.v_time desc) vid ) a where rn between (#{param2}-1) *15 and #{param3} * 15    
+      
+      </select> 
+      
+      <select id="selectMyHistoryByUid" resultMap="VideoMap">
+		 select * from dmvideo dmv,(select distinct h_vid  from ( select *  from dmhistory where h_uid =1 order by h_time desc ) A )B  where dmv.v_id=B.H_VID
+	</select>
+</mapper>

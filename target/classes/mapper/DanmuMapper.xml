@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dtd约束 -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 名称空间 namespace :区别不同映射文件中的唯一标识 -->
+<mapper namespace="com.joinlabs.dao.gx.DanmuMapper">
+
+    <resultMap type="com.joinlabs.entity.danmu" id="danmuMap">
+        <id property="Did" column="d_id"/>
+        <result property="Vid" column="d_vid"/>
+        <result property="danmu" column="d_danmu"/>
+
+    </resultMap>
+
+    <select id="getDanmu" resultType="java.lang.String">
+        select d_danmu from danmu where d_vid= #{param1}
+    </select>
+
+    <insert id="setDanmu">
+        insert into danmu values (danmu_id_seq.nextval,#{param1},#{param2})
+    </insert>
+<select id="getNumber" resultType="java.lang.Integer">
+
+    select count(*) from danmu where d_vid= #{param1}
+</select>
+
+    <delete id="deledanmu">
+        delete from danmu where d_vid= #{param1}
+    </delete>
+
+</mapper>

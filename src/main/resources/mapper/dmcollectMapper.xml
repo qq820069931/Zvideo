@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joinlabs.dao.gx.dmcollectMapper">
+<!-- 
+收藏表的判断                  添加 删除   根据用户 id 和视频ID
+
+ -->
+
+<select id="FindDmcollect"  resultType = "com.joinlabs.entity.Collect">
+    select * from dmcollect where c_uid=#{param1} and c_vid=#{param2}
+   
+</select>
+<delete id="DeleDmcollect" >
+  
+  delete from dmcollect where c_uid=#{param1} and c_vid=#{param2}
+  
+</delete>
+<insert id="AddDmcollect">
+    insert into dmcollect values(collect_id_seq.nextval,#{param1},#{param2})     
+       
+</insert>
+
+<select id="FindAllDmcollect" resultType ="com.joinlabs.entity.Collect">
+    select * from dmcollect where c_vid=#{param1}
+   
+</select>
+</mapper>

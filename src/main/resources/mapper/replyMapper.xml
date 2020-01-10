@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joinlabs.dao.gx.replyMapper">
+    <resultMap id="getReply" type="Comment">
+   <!-- 
+       留言表的删除 查询  增加
+ 	private int uid;
+	private String uaccount;
+	private String uname;
+	private String unname;
+	private String upassword;
+	private String uemail;
+	private String usatement;
+	private int upower;
+	private String usex;
+	private String uphoto;
+	private int ucolor;
+    -->
+    <id property="cid" column="aid"/>
+     <result property="cvid" column="avid"/>
+     <result property="cuid" column="acuid"/>
+     <result property="ccid" column="acid"/>
+     <result property="ccontent" column="acontent"/>
+     <result property="ctime" column="atime"/>
+       <result property="use.uid" column="auid"/>  
+       <result property="use.uname" column="aname"/>
+       <result property="use.uphoto" column="aphoto"/>
+          <result property="use.unname" column="anname" />  
+       <collection property="comment" ofType="com.joinlabs.entity.Comment">
+			
+			       <id column="cid" property="bid"/>
+			       <result property="cuid" column="bcuid"/>
+                  <result property="ccid" column="bcid"/>
+                  <result property="ccontent" column="bcontent"/>
+                  <result property="ctime" column="btime"/>
+                  <result property="use.uid" column="buid" />  
+                    <result property="use.unname" column="bnname" />  
+                  <result property="use.uname" column="bname" />
+                  <result property="use.uphoto" column="bphoto" />
+	</collection>
+
+
+    </resultMap>
+    <select id="getRrplys" resultMap="getReply">
+         select * from  
+      (select 
+       c_vid avid,
+       c_cid acid,
+       c_id aid,
+       c_uid acuid,
+       c_content acontent,
+       c_time atime, 
+       u_id auid,
+       u_name aname,
+       u_nname anname,
+       u_photo aphoto
+        from dmcomment dmcof, dmuser dmu where c_cid  is null and dmu.u_id=dmcof.c_uid ) dmco , 
+        
+        
+       ( select 
+       c_cid bcid,
+       c_id bid,
+       c_uid bcuid,
+       c_content bcontent,
+       c_time btime,
+       u_id buid,
+       u_name bname,
+       u_nname bnname,
+       u_photo bphoto
+       from dmcomment dmcof,dmuser dmu where c_cid is not null and dmu.u_id=dmcof.c_uid)  dmcot 
+       
+       
+       where bcid(+)=aid and avid=#{param1} order by atime desc
+    </select>
+    
+    
+    
+    <insert id="AddReply">
+    
+    insert into dmcomment values(comment_id_seq.nextval,#{cvid},#{cuid},#{ccid},#{ccontent},to_date(#{ctime},'yyyy-mm-dd,hh24:mi:ss'),null,null,null)
+    
+    
+    </insert>
+    
+    <insert id="AddReplyT">
+    
+    insert into dmcomment values(comment_id_seq.nextval,#{cvid},#{cuid},null,#{ccontent},to_date(#{ctime},'yyyy-mm-dd,hh24:mi:ss'),null,null,null)
+    
+    
+    </insert>
+    
+    
+    
+    <select id="FindAllReply" resultMap="getReply">
+select * from  dmcomment where c_vid=#{param1}
+    
+    
+    
+    </select>
+    
+    
+    
+    <update id="DeletReply">
+    update dmcomment dmc set 
+             c_content=#{param1}
+             
+              where dmc.c_id= #{param2}
+    
+    </update>
+
+    <select id="PageReply">
+        select *  from
+         (select t.*, ROWNUM AS rowno  from dmcomment  t where rownum &lt; #{param1}*5+1) b
+         where  b.rowno &gt; #{param1}*5 and c_vid =#{param2}
+
+
+
+    </select>
+    
+
+   
+</mapper>
