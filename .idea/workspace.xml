@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51541ebc-22f2-46c9-8eaa-64d059f87a88" name="默认更改列表" comment="2020.1.10 上传">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zvideo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/AdminAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/ClassAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/ClassVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/IndexAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/UserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/gx/GetHttpSessionConfigurator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/gx/ReplyAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/gx/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/gx/WebSocketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/gx/dmattentionAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/gx/dmcollectAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/gx/videoRunAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/gx/viedoCommtAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zjj/CommAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zjj/CommonPageAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zjj/GzAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zjj/MyCollectAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zjj/MyHistoryAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zjj/MyInfoAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zjj/MyWorksAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zjj/UploadVideoAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zy/AdminLoginAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zy/FileUploadAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zy/MovieAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/action/zy/VideoCheckAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/aop/nullc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/app.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/RecommendMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/VideoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/gx/DanmuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/gx/dmattentionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/gx/dmcollectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/gx/dmhistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/gx/dminformMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/gx/replyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/zy/AdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/zy/CheckMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/zy/MovieMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/dao/zy/UploadMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Attention.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Barrage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Collect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Dmclass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Inform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/PageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Recommend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/danmu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/zjj/FilesBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/zjj/GzUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/zjj/GzUseritem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/zjj/InformItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/zjj/LyInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/entity/zjj/dmCollectItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/AccountNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/CustomExceptionResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/CustomHandlerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/EmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/FileContentTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/LoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/RePasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/RegisterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/UserAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/UserNameNotExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/UserPasswordErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/exception/VerifyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/RecommendService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/VideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/DanmuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/dmattentionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/dmcollectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/dmhistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/dminformService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/impl/DanmuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/impl/dmattentionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/impl/dmcollectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/impl/dmhistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/impl/dminformServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/impl/replyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/gx/replyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/impl/RecommendServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/impl/VideoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zjj/UploadVideosImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zy/IAdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zy/ICheckFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zy/IMovieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zy/IUploadFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zy/impl/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zy/impl/CheckFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zy/impl/MovieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/service/zy/impl/UploadFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/util/EmailUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/util/FileUploadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joinlabs/util/Verification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CheckMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DanmuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MovieMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/RecommendMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UploadMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/dmattentionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/dmcollectMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/dmhistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/dminformMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/replyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/text/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/text/CheckMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/text/MovieMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/text/UploadMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/text/UseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Live/Live.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Live/run.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/file_check.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/file_upload.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/movieInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/play.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/showCheckFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/showUnderMovie.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/underMovie.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fxz/classMovie.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fxz/classVideo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fxz/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fxz/pageVide.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fxz/videoview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/gx/barrageVideo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/gx/commentTwo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/gx/run.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wjr/RePwd1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wjr/RePwd2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wjr/RePwd3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wjr/RePwdSuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wjr/logreg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/Hisvideo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/MydataUpd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/Personindex.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/history.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/inform.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/myAttention.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/myCollect.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/myVideo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/otherPersonindex.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/pageVide.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/uploaduser.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zjj/userUpload.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/VideoJS.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/VideoJS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/VideoJS.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/VideoJS.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fxz/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gx/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gx/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gx/colpick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gx/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gx/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gx/rd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gx/scojs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/gx/videoCT.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/wjr/logreg.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/wjr/repwd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/zjj/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/VideoJS.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/VideoJS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/VideoJS.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/VideoJS.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/113.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/admin_photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/audio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/barrage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/enlarge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/gb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logreg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/micrify.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/pause.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/play2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/reversal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/setting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/touxiang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/touxiang2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/update.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/fxz/ssk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gx/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gx/colpick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gx/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gx/jquery.danmu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gx/jquery.shCircleLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gx/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gx/sco.tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/gx/videoCT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jQuery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/wjr/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/wjr/logreg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/wjr/regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/adminlayui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/css/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/transfer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/publicUtil/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/Zvideo.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/AdminAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/ClassAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/ClassVideo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/IndexAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/UserAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/gx/GetHttpSessionConfigurator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/gx/ReplyAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/gx/WebSocketConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/gx/WebSocketService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/gx/dmattentionAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/gx/dmcollectAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/gx/videoRunAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/gx/viedoCommtAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zjj/CommAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zjj/CommonPageAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zjj/GzAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zjj/MyCollectAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zjj/MyHistoryAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zjj/MyInfoAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zjj/MyWorksAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zjj/UploadVideoAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zy/AdminLoginAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zy/FileUploadAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zy/MovieAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/action/zy/VideoCheckAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/aop/nullc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/app.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/RecommendMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/VideoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/gx/DanmuMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/gx/dmattentionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/gx/dmcollectMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/gx/dmhistoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/gx/dminformMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/gx/replyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/zy/AdminMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/zy/CheckMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/zy/MovieMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/dao/zy/UploadMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Attention.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Barrage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Collect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Comment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Dmclass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/History.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Inform.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Movie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/PageBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Recommend.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/Video.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/danmu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/zjj/FilesBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/zjj/GzUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/zjj/GzUseritem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/zjj/InformItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/zjj/LyInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/entity/zjj/dmCollectItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/AccountNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/CustomException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/CustomExceptionResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/CustomHandlerException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/EmailException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/FileContentTypeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/LoginException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/RePasswordException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/RegisterException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/UserAlreadyExistException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/UserNameNotExistException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/UserPasswordErrorException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/exception/VerifyException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/RecommendService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/VideoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/DanmuService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/dmattentionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/dmcollectService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/dmhistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/dminformService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/impl/DanmuServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/impl/dmattentionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/impl/dmcollectServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/impl/dmhistoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/impl/dminformServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/impl/replyServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/gx/replyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/impl/RecommendServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/impl/VideoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zjj/UploadVideosImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zy/IAdminService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zy/ICheckFileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zy/IMovieService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zy/IUploadFileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zy/impl/AdminService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zy/impl/CheckFileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zy/impl/MovieService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/service/zy/impl/UploadFileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/util/EmailUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/util/FileUploadUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/joinlabs/util/Verification.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/CheckMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/DanmuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/MovieMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/RecommendMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UploadMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/VideoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/dmattentionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/dmcollectMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/dmhistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/dminformMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/replyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/text/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/text/CheckMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/text/MovieMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/text/UploadMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/text/UseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="Tag Library Descriptor" />
+        <option value="JavaScript File" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\Zvideo\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.1" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UhfRes8NYKn2RoPCBHEQuztJiR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaMethodFindUsagesOptions.isImplementingMethods" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Zvideo\src\main\java\com\joinlabs\dao\gx" />
+      <recent name="F:\Zvideo\src\main\webapp\jsp" />
+      <recent name="F:\Zvideo\src\main\webapp\WEB-INF\jsp\Live" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Zvideo\src\main\webapp\css\fonts" />
+      <recent name="F:\Zvideo\src\main\webapp\fonts" />
+      <recent name="F:\Zvideo\src\main\webapp\css\gx" />
+      <recent name="F:\Zvideo\src\main\webapp\js\gx" />
+      <recent name="F:\Zvideo\src\main\webapp\WEB-INF\jsp\Live" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.app">
+    <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.joinlabs.app" />
+      <module name="Zvideo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.joinlabs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Zvideo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.joinlabs.app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51541ebc-22f2-46c9-8eaa-64d059f87a88" name="默认更改列表" comment="" />
+      <created>1575813740594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575813740594</updated>
+      <workItem from="1575813746678" duration="2542000" />
+      <workItem from="1575862908144" duration="4799000" />
+      <workItem from="1575870552133" duration="15813000" />
+      <workItem from="1575948180472" duration="7586000" />
+      <workItem from="1575971938872" duration="516000" />
+      <workItem from="1576038632457" duration="7085000" />
+      <workItem from="1576832007465" duration="634000" />
+      <workItem from="1576919377309" duration="2258000" />
+      <workItem from="1576921820394" duration="5031000" />
+      <workItem from="1577007843982" duration="4720000" />
+      <workItem from="1578114988057" duration="1903000" />
+      <workItem from="1578154934910" duration="356000" />
+      <workItem from="1578155313290" duration="721000" />
+      <workItem from="1578156052164" duration="56000" />
+      <workItem from="1578190000475" duration="14373000" />
+      <workItem from="1578275087639" duration="9219000" />
+      <workItem from="1578447591730" duration="591000" />
+      <workItem from="1578623783756" duration="367000" />
+      <workItem from="1578624400664" duration="2574000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020.1.10" />
+    <MESSAGE value="2020.1.10 上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.1.10 上传" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575814793523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575814793523" />
+    <state x="714" y="360" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1578155632028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="360" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578155632028" />
+    <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1578282796347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578282796347" />
+    <state x="680" y="271" key="#com.intellij.refactoring.memberPushDown.PushDownDialog" timestamp="1575867167481">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="680" y="271" key="#com.intellij.refactoring.memberPushDown.PushDownDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575867167481" />
+    <state x="552" y="180" key="#项目结构" timestamp="1578624743727">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="180" key="#项目结构/0.0.1920.1040@0.0.1920.1040" timestamp="1578624743727" />
+    <state x="575" y="118" key="CommitChangelistDialog2" timestamp="1578626987839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="575" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578626987839" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1578625199372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578625199372" />
+    <state x="950" y="236" key="FileChooserDialogImpl" timestamp="1578626762201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="950" y="236" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578626762201" />
+    <state x="773" y="433" key="Github.CreateGistDialog" timestamp="1578626442133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="773" y="433" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578626442133" />
+    <state x="448" y="397" key="Github.ShareDialog" timestamp="1578627044285">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="448" y="397" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578627044285" />
+    <state width="1920" height="308" key="GridCell.Tab.0.bottom" timestamp="1578292824116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1920" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578292824116" />
+    <state width="1920" height="308" key="GridCell.Tab.0.center" timestamp="1578292824115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1920" height="308" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578292824115" />
+    <state width="1920" height="308" key="GridCell.Tab.0.left" timestamp="1578292824115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1920" height="308" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578292824115" />
+    <state width="1920" height="308" key="GridCell.Tab.0.right" timestamp="1578292824115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1920" height="308" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578292824115" />
+    <state width="1920" height="308" key="GridCell.Tab.1.bottom" timestamp="1578292824116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1920" height="308" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578292824116" />
+    <state width="1920" height="308" key="GridCell.Tab.1.center" timestamp="1578292824116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1920" height="308" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578292824116" />
+    <state width="1920" height="308" key="GridCell.Tab.1.left" timestamp="1578292824116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1920" height="308" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578292824116" />
+    <state width="1920" height="308" key="GridCell.Tab.1.right" timestamp="1578292824116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1920" height="308" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578292824116" />
+    <state x="490" y="177" key="Maven.ArtifactSearchDialog" timestamp="1575814583988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="177" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575814583988" />
+    <state x="440" y="96" key="SettingsEditor" timestamp="1578626435823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="96" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578626435823" />
+    <state x="670" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1578190010560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578190010560" />
+    <state x="330" y="223" key="new project wizard" timestamp="1578215123591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="330" y="223" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1578215123591" />
+    <state x="581" y="418" width="672" height="288" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1576920945501">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="581" y="418" width="672" height="288" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576920945501" />
+    <state x="702" y="151" key="refactoring.ChangeSignatureDialog" timestamp="1578284184649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="151" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578284184649" />
+    <state x="616" y="235" key="run.anything.popup" timestamp="1575813948156">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575813948156" />
+    <state x="623" y="225" width="918" height="678" key="search.everywhere.popup" timestamp="1578228565266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="918" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578228565266" />
+    <state x="790" y="313" key="svn.repositoryBrowser" timestamp="1578626687831">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="313" key="svn.repositoryBrowser/0.0.1920.1040@0.0.1920.1040" timestamp="1578626687831" />
+    <state x="703" y="294" key="svn4idea.import.options" timestamp="1578626680632">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="703" y="294" key="svn4idea.import.options/0.0.1920.1040@0.0.1920.1040" timestamp="1578626680632" />
+  </component>
+</project>
